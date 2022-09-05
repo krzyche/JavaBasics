@@ -1,5 +1,5 @@
 
-package Section_5;
+package org.kester.section_5;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -9,7 +9,7 @@ import java.util.Locale;
 //            live. So, if you live in the United States, it would return “$149.32”, Korea = ₩149, France/
 //            EU = 149,32 €, etc.
 
-public class NumbersExercises6 {
+public class NumberExercises_6 {
 
     public static void main(String[] args) throws ParseException {
         Double money = 149.32;

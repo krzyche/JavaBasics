@@ -1,4 +1,4 @@
-package Section_5;
+package org.kester.section_5;
 //
 //        Imagine you’ve been given data representing how long items have sat in a warehouse. Your
 //        job is to categorize them by time in the warehouse. Items can be classified as 0, 1, 2 or 3.
@@ -9,7 +9,7 @@ package Section_5;
 //        number in the set of ages above. Example: an item waiting for 5 days would return 0 and
 //        an item waiting 92 days would return 1.
 
-public class NumbersExercises4 {
+public class NumberExercises_4 {
     public static int[] set = {13, 49, 90, 130, 175, 181, 255, 310, 330, 359};
     public static int i = -1;
 

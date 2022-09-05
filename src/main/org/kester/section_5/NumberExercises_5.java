@@ -1,4 +1,4 @@
-package Section_5;
+package org.kester.section_5;
 
 //        Make a method, next(), that can be called 10 times and generate a random integer between
 //        0 & 10 (non-inclusive). This method keep a running sum of all random numbers it generates
@@ -7,7 +7,7 @@ package Section_5;
 
 import java.util.Random;
 
-public class NumbersExercises5 {
+public class NumberExercises_5 {
 
     public static int sumRandom = 0;
 
