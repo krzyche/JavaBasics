@@ -6,13 +6,15 @@ public class ControlFlow_2 {
 
     public static void daysOfWeek() {
         String[] daysArray = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+        String result = "";
         int i = 0;
-        while (i<7) {
+        while (i< daysArray.length) {
             if (i%2==1) {
-                System.out.println(daysArray[i].toUpperCase());
+                result = daysArray[i].toUpperCase();
             } else {
-                System.out.println(daysArray[i]);
+                result = daysArray[i];
             }
+            System.out.println(result);
             i++;
         }
     }

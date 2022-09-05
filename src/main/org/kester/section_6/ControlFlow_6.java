@@ -15,7 +15,7 @@ public class ControlFlow_6 {
 //    it should capitalize each word of a multi-word meal name.
 
     private static void printMeal (String input) {
-        String regex = "(\\w*)\\s{0,1}(\\w*)(.*)";
+        String regex = "(\\w*)\\s?(\\w*)(.*)";
         Pattern pat = Pattern.compile(regex);
         Matcher mat = pat.matcher(input);
         mat.matches();

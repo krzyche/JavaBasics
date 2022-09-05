@@ -17,12 +17,14 @@ public class ControlFlow_1 {
 
 public static void daysOfWeek() {
     String[] daysArray = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-    for (int i=0; i<7; i++) {
+    String result = "";
+    for (int i=0; i<daysArray.length; i++) {
         if (i%2==1) {
-            System.out.println(daysArray[i].toUpperCase());
+             result = daysArray[i].toUpperCase();
         } else {
-            System.out.println(daysArray[i]);
+            result = daysArray[i];
         }
+        System.out.println(result);
     }
 }
 
