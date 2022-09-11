@@ -7,5 +7,5 @@ package org.kester.section_8;
 //        3. Print 10 randomly-chosen days of the week
 
 public class MoreOOP_1 {
-  private int shoeNumber = 42;
+    gfdg
 }
