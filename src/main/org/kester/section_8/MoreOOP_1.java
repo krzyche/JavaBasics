@@ -45,7 +45,6 @@ public class MoreOOP_1 {
         }
     }
 
-
     public static void main(String[] args) {
         printDayOfWeek();
         System.out.println("");
