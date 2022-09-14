@@ -1,6 +1,6 @@
 package org.kester.section_8;
 
-public enum alphabet {
+public enum Alphabet {
     a,
     b,
     c,

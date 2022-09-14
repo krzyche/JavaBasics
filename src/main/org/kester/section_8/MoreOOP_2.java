@@ -27,23 +27,28 @@ public class MoreOOP_2 {
         String[] array = text.split("\\s");
         String result = "";
         for (int i = 0; i < array.length; i++) {
-            array[i] = array[i].toString().substring(0, 1).toUpperCase() + array[i].toString().substring(1).toLowerCase();
+            array[i] = capWord(array[i]);
             result = result.concat(" ").concat(array[i]);
         }
         return result.strip();
     }
 
+    private static String capWord(String text){
+        return text.substring(0,1).toUpperCase() + text.substring(1).toLowerCase();
+    }
+
+
     private static void ex1() {
-        int numberOfElements = daysOfWeek.values().length;
+        int numberOfElements = DayOfWeek.values().length;
         for (int i=0; i<numberOfElements; i++){
-            System.out.printf("We eat %s on %s\n", meals.values()[i], capitalize(daysOfWeek.values()[i].toString()));
+            System.out.printf("We eat %s on %s\n", Meal.values()[i], capitalize(DayOfWeek.values()[i].toString()));
         }
     }
 
     private static void ex2() {
-        int numberOfElements = daysOfWeek.values().length;
+        int numberOfElements = DayOfWeek.values().length;
         for (int i=0; i<numberOfElements; i++){
-            System.out.printf("We eat %s on %s\n", capitalize(meals.values()[i].toString()), daysOfWeek.values()[i]);
+            System.out.printf("We eat %s on %s\n", capitalize(Meal.values()[i].toString()), DayOfWeek.values()[i]);
         }
     }
 

@@ -10,25 +10,22 @@ import java.util.Random;
 
 public class MoreOOP_1 {
     public static void printDayOfWeek() {
-        int numberOfElements = daysOfWeek.values().length;
-        for (int i = 0; i<numberOfElements; i++) {
-            System.out.println(daysOfWeek.values()[i]);
+        for (DayOfWeek element : DayOfWeek.values()) {
+            System.out.println(element);
         }
     }
     public static void printDayOfWeekCapitalized() {
-        int numberOfElements = daysOfWeek.values().length;
-        for (int i = 0; i<numberOfElements; i++) {
-            String dayOfWeek = daysOfWeek.values()[i].toString().toLowerCase();
+        for (DayOfWeek element : DayOfWeek.values()) {
+            String dayOfWeek = element.toString().toLowerCase();
             dayOfWeek = dayOfWeek.substring(0,1).toUpperCase() + dayOfWeek.substring(1);
             System.out.println(dayOfWeek);
         }
     }
 
     public static void printDayOfWeekMixed() {
-        int numberOfElements = daysOfWeek.values().length;
-        for (int i = 0; i<numberOfElements; i++) {
-            String dayOfWeek = daysOfWeek.values()[i].toString().toLowerCase();
-            if (i%2 == 0) {
+        for (DayOfWeek element : DayOfWeek.values()) {
+            String dayOfWeek = element.toString().toLowerCase();
+            if (element.ordinal()%2 == 0) {
                 dayOfWeek = dayOfWeek.substring(0, 1).toUpperCase() + dayOfWeek.substring(1);
                 System.out.println(dayOfWeek);
             } else {
@@ -41,7 +38,7 @@ public class MoreOOP_1 {
         Random random = new Random();
         for (int i = 0; i<10; i++) {
             int number = random.nextInt(7);
-            System.out.printf("%s. %s\n", i+1, daysOfWeek.values()[number]);
+            System.out.printf("%s. %s\n", i+1, DayOfWeek.values()[number]);
         }
     }
 

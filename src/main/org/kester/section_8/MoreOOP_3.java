@@ -9,13 +9,16 @@ public class MoreOOP_3 {
 
     public static String getMealsForDays(String input) {
         String[] array = input.split(",");
-        String mealsList = "";
+        StringBuilder mealsList = new StringBuilder();
         for (String dayOfWeek:array) {
             String day = dayOfWeek.strip().toUpperCase();
-            int index = daysOfWeek.valueOf(day).ordinal();
-            mealsList += meals.values()[index] + ", ";
+            int index = DayOfWeek.valueOf(day).ordinal();
+            if (!mealsList.isEmpty()){
+                mealsList.append(", ");
+            }
+            mealsList.append(Meal.values()[index]);
         }
-        return mealsList.replaceAll(", $", "");
+        return mealsList.toString();
     }
 
     public static void main(String[] args) {

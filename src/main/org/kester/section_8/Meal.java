@@ -1,6 +1,6 @@
 package org.kester.section_8;
 
-public enum meals {
+public enum Meal {
     spaghetti,
     tacos,
     chicken,

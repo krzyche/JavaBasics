@@ -10,7 +10,7 @@ public class MoreOOP_4 {
 
     public static int getLetterOrdinal(String input) {
         String letter = input.strip().toLowerCase();
-        int index = alphabet.valueOf(letter).ordinal() + 1;
+        int index = Alphabet.valueOf(letter).ordinal() + 1;
         return index;
     }
 

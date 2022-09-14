@@ -6,8 +6,8 @@ package org.kester.section_8;
 public class MoreOOP_5 {
 
     public static String getLetterFromNumber(int input) {
-        if (input <= alphabet.values().length && input>0) {
-            return alphabet.values()[input-1].toString();
+        if (input <= Alphabet.values().length && input>0) {
+            return Alphabet.values()[input-1].toString();
         }
         return null;
     }
