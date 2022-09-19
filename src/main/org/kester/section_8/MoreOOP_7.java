@@ -20,7 +20,7 @@ public class MoreOOP_7{
     public String convertNotation(String input){
         int result_1 = getLetterOrdinal(input.substring(0,1));
         int result_2 = changeNumber(Integer.parseInt(input.substring(1,2)));
-        String response = result_1 + ", " + result_2;
+        String response = result_1 + "," + result_2;
         return response;
     }
 
